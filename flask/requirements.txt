@@ -1,0 +1,8 @@
+Flask
+python-dotenv
+psycopg2-binary
+SQLAlchemy
+Flask-SQLAlchemy
+Werkzeug
+flask-wtf
+playwright

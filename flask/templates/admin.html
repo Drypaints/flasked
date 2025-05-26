@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% block title %}Admin Panel{% endblock %}
+{% block content %}
+<div class="py-8">
+  <h1 class="text-3xl font-bold mb-6">Admin Panel</h1>
+  <h2 class="text-xl font-semibold mb-4">Registered Users</h2>
+
+  <div class="overflow-x-auto">
+    <table class="min-w-full bg-white border border-gray-200 shadow rounded-lg">
+      <thead class="bg-gray-100">
+        <tr>
+          <th class="px-4 py-2 border-b">ID</th>
+          <th class="px-4 py-2 border-b">Username</th>
+          <th class="px-4 py-2 border-b">User Type</th>
+          <th class="px-4 py-2 border-b">Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for user in users %}
+        <tr class="text-center">
+          <td class="px-4 py-2 border-b">{{ user.id }}</td>
+          <td class="px-4 py-2 border-b">{{ user.username }}</td>
+          <td class="px-4 py-2 border-b capitalize">{{ user.user_type }}</td>
+          <td class="px-4 py-2 border-b">
+            {% if user.user_type != 'admin' %}
+            <form action="{{ url_for('promote', user_id=user.id) }}" method="post">
+              <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+              <button type="submit" class="bg-blue-600 text-white px-3 py-1 rounded hover:bg-blue-700 transition">
+                Promote to Admin
+              </button>
+            </form>
+            {% else %}
+            <span class="text-green-600 font-semibold">Already Admin</span>
+            {% endif %}
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+
+  <div class="mt-6">
+    <a href="{{ url_for('index') }}" class="text-blue-600 hover:underline">← Back to Home</a>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,122 @@
+[
+    {
+        "code": "GHOSTGRID",
+        "specialite": "Cyberdéfense des infrastructures critiques & contre-intrusion réseau",
+        "membres": 12,
+        "departement": "Cybersécurité"
+    },
+    {
+        "code": "NULLTRACE",
+        "specialite": "Opérations de brouillage, effacement de traces & cybersabotage ciblé",
+        "membres": 8,
+        "departement": "Cybersécurité"
+    },
+    {
+        "code": "CODELOCK",
+        "specialite": "Protection des accès à BLACKLOOP, gestion des identifiants sensibles",
+        "membres": 10,
+        "departement": "Cybersécurité"
+    },
+    {
+        "code": "EYECORE",
+        "specialite": "Surveillance satellite & drones, géolocalisation temps réel",
+        "membres": 14,
+        "departement": "Renseignement & Surveillance"
+    },
+    {
+        "code": "SILENTNODE",
+        "specialite": "Infiltration réseaux sociaux, identification des menaces dissidentes",
+        "membres": 9,
+        "departement": "Renseignement & Surveillance"
+    },
+    {
+        "code": "WAVESCAN",
+        "specialite": "Interception communications radio et numériques, SIGINT",
+        "membres": 11,
+        "departement": "Renseignement & Surveillance"
+    },
+    {
+        "code": "INFOPRISM",
+        "specialite": "Analyse algorithmique de masse (vidéosurveillance, métadonnées, NLP)",
+        "membres": 10,
+        "departement": "Renseignement & Surveillance"
+    },
+    {
+        "code": "VITALSENTRY",
+        "specialite": "Surveillance biométrique dans les hôpitaux et transports publics",
+        "membres": 7,
+        "departement": "Bio-surveillance"
+    },
+    {
+        "code": "GENECODE",
+        "specialite": "Extraction & corrélation ADN, gestion des bases de données génétiques",
+        "membres": 6,
+        "departement": "Bio-surveillance"
+    },
+    {
+        "code": "IRONVAULT",
+        "specialite": "Protection physique des data centers BLACKLOOP",
+        "membres": 16,
+        "departement": "Sécurité physique"
+    },
+    {
+        "code": "BLACKDOME",
+        "specialite": "Contre-mesures anti-drones et protection périmétrique avancée",
+        "membres": 10,
+        "departement": "Sécurité physique"
+    },
+    {
+        "code": "STRIKEPHASE",
+        "specialite": "Interventions armées discrètes en zone urbaine",
+        "membres": 8,
+        "departement": "Forces spéciales"
+    },
+    {
+        "code": "FOXTOWER",
+        "specialite": "Surveillance rapprochée des figures politiques et journalistes clés",
+        "membres": 10,
+        "departement": "Forces spéciales"
+    },
+    {
+        "code": "SKINFIRE",
+        "specialite": "Contre-insurrection, gestion violente des foules en contexte critique",
+        "membres": 20,
+        "departement": "Forces spéciales"
+    },
+    {
+        "code": "TECHFORGE",
+        "specialite": "Maintenance furtive des dispositifs de surveillance (caméras, bornes, capteurs)",
+        "membres": 12,
+        "departement": "Support technique"
+    },
+    {
+        "code": "DARKSUPPLY",
+        "specialite": "Logistique armement, stockage sécurisé, livraisons clandestines",
+        "membres": 9,
+        "departement": "Support technique"
+    },
+    {
+        "code": "MINDCAST",
+        "specialite": "Conception de campagnes d’influence algorithmique via BLACKLOOP",
+        "membres": 10,
+        "departement": "Opérations psychologiques"
+    },
+    {
+        "code": "ECHOSINK",
+        "specialite": "Neutralisation de narratifs hostiles, manipulation d’opinion publique",
+        "membres": 7,
+        "departement": "Opérations psychologiques"
+    },
+    {
+        "code": "COREAXIS",
+        "specialite": "Coordination tactique inter-unités & supervision des missions sensibles",
+        "membres": 6,
+        "departement": "Commandement stratégique"
+    },
+    {
+        "code": "VAULTMIND",
+        "specialite": "Liaison directe avec l’IA BLACKLOOP, prise de décision semi-autonome",
+        "membres": 6,
+        "departement": "Commandement stratégique"
+    }
+]

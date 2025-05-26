@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{% block title %}ForgeTek UMC{% endblock %}</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="/static/out.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100 min-h-screen text-gray-800">
+
+  <header class="bg-gray-800 text-white shadow mb-6">
+    <nav class="container mx-auto flex justify-between items-center p-4">
+      <div class="text-xl font-bold">
+        <a href="{{ url_for('index') }}" class="hover:text-gray-300">ForgeTek UMC</a>
+      </div>
+      <div class="space-x-4">
+        <a href="{{ url_for('index') }}" class="hover:text-gray-300">Home</a>
+        {% if session.get("username") %}
+        <a href="{{ url_for('profile') }}" class="hover:text-gray-300">Profile</a>
+        <a href="{{ url_for('report') }}" class="hover:text-gray-300">Report</a>
+        {% if session.get("user_type") == "admin" %}
+        <a href="{{ url_for('admin') }}" class="hover:text-gray-300">Admin</a>
+        <a href="{{ url_for('manage_env') }}" class="hover:text-gray-300">Management scripts</a>
+        {% endif %}
+        <a href="{{ url_for('logout') }}" class="hover:text-gray-300">Logout</a>
+        {% else %}
+        <a href="{{ url_for('login') }}" class="hover:text-gray-300">Login</a>
+        <a href="{{ url_for('register') }}" class="hover:text-gray-300">Register</a>
+        {% endif %}
+      </div>
+    </nav>
+  </header>
+
+  <main class="container mx-auto px-4">
+    {% block content %}{% endblock %}
+  </main>
+
+  <footer class="text-center text-sm text-gray-500 mt-12 py-4">
+    &copy; {{ 2025 }} ForgeTek UMC
+  </footer>
+
+</body>
+
+</html>

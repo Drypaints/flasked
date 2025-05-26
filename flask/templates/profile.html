@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block title %}Profile{% endblock %}
+{% block content %}
+<div class="max-w-2xl mx-auto py-10">
+  <h1 class="text-3xl font-bold mb-6">User Profile</h1>
+  <div class="space-y-2 text-lg">
+    <p><strong>User ID:</strong>
+    <div id="id">{{ user.id }}</div>
+    </p>
+    <p><strong>Username:</strong>
+    <div id="username">{{ user.username }}</div>
+    </p>
+    <p><strong>User Type:</strong>
+    <div id="user_type">{{ user.user_type }}</div>
+    </p>
+  </div>
+  <p class="mt-6"><a href="{{ url_for('index') }}" class="text-blue-600 hover:underline">← Back to Home</a></p>
+</div>
+{% endblock %}
